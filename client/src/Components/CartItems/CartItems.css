@@ -1,0 +1,150 @@
+.cartitems {
+  margin: 100px 170px;
+}
+
+.cartitems hr {
+  height: 3px;
+  background: #e3e3e3;
+  border: 0;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  padding: 20px 0px;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartitems-format {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.carticon-product-icon {
+  height: 62px;
+}
+
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+}
+
+.addremove {
+  display: flex;
+  gap: 10px;
+}
+
+.addremove button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.cartitems-down {
+  display: flex;
+  margin: 100px 0px;
+  width: 50%;
+}
+
+.cartiems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 200px; */
+  gap: 40px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.cartiems-total button {
+  width: 260px;
+  height: 60px;
+  outline: none;
+  border: none;
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media(max-width:1280px) {
+  .cartitems {
+    margin: 60px 50px;
+  }
+  .cartitems-format-main {
+    grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+    padding: 15px 0px;
+    font-size: 15px;
+  }
+  .cartitems-format p {
+    margin-bottom: 0;
+  }
+  .carticon-product-icon {
+    height: 50px;
+  }
+  .addremove {
+    gap: 5px;
+  }
+  .addremove button {
+    width: 40px;
+    height: 40px;
+  }
+  .cartitems-quantity {
+    width: 40px;
+    height: 40px;
+  }
+  .cartitems-down {
+    margin: 80px 0px;
+  }
+  .cartiems-total button {
+    max-width: 200px;
+    height: 45px;
+    font-size: 13px;
+  }
+}
+
+@media(max-width:800px){
+  .cartitems {
+    margin: 40px 30px;
+  }
+  .cartitems-format p {
+    font-size: 12px;
+  }
+  .cartitems-down {
+    margin: 80px 0px;
+    width: 100%;
+  }
+  .cartitems-quantity {
+    width: 30px;
+    height: 30px;
+  }
+  .addremove button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media(max-width:500px) {
+  .cartitems-format-main {
+    display: none;
+    grid-template-columns:  0.5fr 3fr 0.5fr;
+    gap: 10px;
+  }
+  .cartitems-format {
+    display: grid;
+
+  }
+}
